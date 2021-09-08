@@ -1,0 +1,22 @@
+/*=============================================
+CONTACTO
+=============================================*/
+
+/*------------ contacto --------------*/
+
+.contactenos {
+  background-image: url(../img/fondoContacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  /* position: relative;*/
+}
+.contactenos::before {
+  /* position:absolute; */
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(91, 207, 209, 0.2);
+}

@@ -1,0 +1,419 @@
+/*=============================================
+GLOBAL
+=============================================*/
+ul,
+ol {
+  list-style: none; }
+
+a:visited,
+a:link,
+a:focus,
+a:hover,
+a:active {
+  list-style: none;
+  text-decoration: none; }
+
+/*=============================================
+HEADER
+=============================================*/
+/* menu hamburgueza */
+.hamburger {
+  position: fixed;
+  background-color: transparent;
+  right: 50px;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  padding: 20px 20px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  z-index: 1002;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.hamburger.is-active {
+  background-color: none; }
+
+._layer {
+  background: #beb4b4;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  width: 28px;
+  height: 4px;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98); }
+
+.hamburger:hover .-top {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+.hamburger:hover .-bottom {
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%); }
+
+.hamburger.is-active .-top {
+  -webkit-transform: translateY(200%) rotate(45deg) !important;
+  -ms-transform: translateY(200%) rotate(45deg) !important;
+  transform: translateY(200%) rotate(45deg) !important; }
+
+.hamburger.is-active .-mid {
+  opacity: 0; }
+
+.hamburger.is-active .-bottom {
+  -webkit-transform: translateY(-200%) rotate(135deg) !important;
+  -ms-transform: translateY(-200%) rotate(135deg) !important;
+  transform: translateY(-200%) rotate(135deg) !important; }
+
+.menuppal.is_active {
+  transform: translate3d(0px, 0px, 0px); }
+
+.menuppal {
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  left: 0px;
+  background-color: black;
+  display: inline-block;
+  height: 90px;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0px, -100%, 0px);
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  width: 100%;
+  z-index: 1001; }
+
+.menuppal ul {
+  padding: 0 10%; }
+
+.menuppal ul li {
+  list-style: none;
+  text-align: center;
+  font-family: Verdadna, Arial, Helvetica;
+  /*color: $nav-color-text;*/
+  font-size: 1rem;
+  line-height: 3em;
+  height: 3em;
+  color: #369;
+  text-transform: none;
+  font-weight: bold; }
+
+.menuppal ul li a {
+  text-decoration: none;
+  color: #369; }
+
+.menuppal ul li a:hover {
+  text-decoration: none;
+  color: #333; }
+
+/* menu hamburgueza FIN*/
+.logo {
+  width: 180px;
+  height: 60px; }
+
+.link {
+  margin-right: 55px; }
+
+.link:hover {
+  background-color: #8ec3d8;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 1px; }
+
+/*=============================================
+FOOTER
+=============================================*/
+footer {
+  background: #000;
+  background-size: center bottom;
+  width: 100%;
+  height: 100%; }
+
+footer hr {
+  background: white; }
+
+.footer1 p {
+  margin-top: 10px;
+  margin-left: 5%;
+  text-align: center; }
+
+.footer1 a {
+  text-align: left;
+  padding: 0px;
+  color: white;
+  margin-left: 5%; }
+
+.footer2 p {
+  margin-top: 10px;
+  margin-left: 5%;
+  text-align: center; }
+
+.footer2 a {
+  text-align: left;
+  padding: 0px;
+  color: white;
+  margin-left: 5%; }
+
+footer p {
+  color: white; }
+
+.footer3 p {
+  text-align: center;
+  margin-top: 10px; }
+
+.footer3 a {
+  margin-left: 50px; }
+
+.footer3 img {
+  margin-left: 0%; }
+
+/*footer 4*/
+.img2 {
+  margin: 0;
+  padding: 0;
+  margin-left: 25%; }
+
+.img1 {
+  text-align: center;
+  margin-top: 10px; }
+
+.footer4 {
+  color: white; }
+
+.footer4 img {
+  width: 20px;
+  height: 20px;
+  margin-left: 0%; }
+
+/*=============================================
+MAPA
+=============================================*/
+.mapa {
+  position: relative; }
+
+.mapa .info {
+  color: #8b7556;
+  position: absolute;
+  width: 400px;
+  right: 10%;
+  top: 10%;
+  background-color: #ffcc29;
+  height: 370px; }
+
+.mapa .info h3 {
+  font-weight: bold; }
+
+/*=============================================
+HOME
+=============================================*/
+/*=============================================
+PLANES
+=============================================*/
+.planes .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.planes .grid-item {
+  position: relative;
+  cursor: pointer; }
+
+.planes .grid-item:nth-child(1) {
+  grid-column: 1 / span 3; }
+
+.planes .grid-item:nth-child(2) {
+  grid-column: 4 / span 3;
+  height: 320px;
+  overflow: hidden; }
+
+.planes .grid-item:nth-child(3) {
+  grid-column: 1 / span 2; }
+
+.planes .grid-item:nth-child(4) {
+  grid-column: 3 / span 2; }
+
+.planes .grid-item:nth-child(5) {
+  grid-column: 5 / span 2; }
+
+.planes .grid-item figure {
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white; }
+
+.planes .grid-item figure h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px !important; }
+
+.planesMovil li {
+  overflow: hidden; }
+
+.planesMovil img {
+  width: 200% !important; }
+
+/*=============================================
+RECORRIDO 
+=============================================*/
+.recorrido .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.recorrido .grid-item {
+  text-align: center; }
+
+.recorrido .grid-item:nth-child(1) {
+  grid-row: 1 / span 1; }
+
+.recorrido .grid-item:nth-child(2) {
+  grid-row: 2 / span 1; }
+
+.recorrido .grid-item:nth-child(3) {
+  grid-row: 1 / span 2; }
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px hacia abajo)
+=============================================*/
+@media (max-width: 768px) {
+  header .grid-container {
+    grid-template-columns: 4fr 1fr; }
+  .planes .grid-container {
+    grid-template-columns: auto; }
+  .recorrido .grid-container {
+    grid-template-columns: 1fr; }
+  .recorrido .grid-container h1 {
+    font-size: 30px; }
+  .contactenos input {
+    width: 100%;
+    margin: 10px 0px; }
+  .mapa .info {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, 0%);
+    background-color: #ffcc29;
+    height: 350px; } }
+
+/*=============================================
+CATEGORIAS
+=============================================*/
+/*------------carrousel categorias --------------*/
+.centradoCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 500px; }
+
+/*=============================================
+DESTACADOS
+=============================================*/
+/*=============================================
+TESTIMONIOS
+=============================================*/
+.testimonios {
+  position: relative;
+  background: url(../img/fondoComentarios.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black; }
+
+.testimonios__text {
+  text-align: justify; }
+
+.testimonios::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(91, 207, 209, 0.2); }
+
+.testimonios h1 {
+  position: relative; }
+
+.testimonios img {
+  border: 2px solid black; }
+
+.testimonios button {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid black;
+  color: dark; }
+
+/*=============================================
+CONOCENOS
+=============================================*/
+/*------------ conocenos --------------*/
+.fondoConocenos {
+  background-image: url(../img/fondoConocenos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+
+.fondoConocenos::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(91, 207, 209, 0.2); }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.45); }
+
+.scale {
+  transition: transform 1s; }
+
+.scale:hover {
+  transform: scale(1.1); }
+
+/*=============================================
+CONTACTO
+=============================================*/
+/*------------ contacto --------------*/
+.contactenos {
+  background-image: url(../img/fondoContacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  /* position: relative;*/ }
+
+.contactenos::before {
+  /* position:absolute; */
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(91, 207, 209, 0.2); }

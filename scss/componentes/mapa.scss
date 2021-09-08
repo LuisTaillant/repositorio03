@@ -1,0 +1,21 @@
+/*=============================================
+MAPA
+=============================================*/
+
+.mapa {
+  position: relative;
+}
+
+.mapa .info {
+  color: #8b7556;
+  position: absolute;
+  width: 400px;
+  right: 10%;
+  top: 10%;
+  background-color: #ffcc29;
+  height: 370px;
+}
+
+.mapa .info h3 {
+  font-weight: bold;
+}

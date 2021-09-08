@@ -1,0 +1,17 @@
+/*=============================================
+CATEGORIAS
+=============================================*/
+
+/*------------carrousel categorias --------------*/
+
+.centradoCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 500px;
+}
