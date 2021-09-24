@@ -7,7 +7,7 @@ HEADER
 .hamburger {
   position: fixed;
   background-color: transparent;
-  right: 50px;
+  right: 25px;
   top: 0;
   height: 30px;
   width: 30px;
@@ -121,4 +121,15 @@ HEADER
   border-radius: 10px;
   color: white;
   padding: 5px 1px;
+}
+
+.shadow__text {
+  text-shadow: 2px 2px 2px rgb(30, 30, 31);
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px hacia abajo)
+=============================================*/
+
+.menuppal {
 }

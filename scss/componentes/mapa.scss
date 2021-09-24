@@ -10,10 +10,16 @@ MAPA
   color: #8b7556;
   position: absolute;
   width: 400px;
-  right: 10%;
+  right: 5%;
   top: 10%;
   background-color: #ffcc29;
   height: 370px;
+}
+
+.mapa .info p {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #080808;
 }
 
 .mapa .info h3 {

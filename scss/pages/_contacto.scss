@@ -20,3 +20,13 @@ CONTACTO
   height: 100%;
   background: rgba(91, 207, 209, 0.2);
 }
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px hacia abajo)
+=============================================*/
+
+@media (max-width: 768px) {
+  .contactenos {
+    height: 500px;
+  }
+}

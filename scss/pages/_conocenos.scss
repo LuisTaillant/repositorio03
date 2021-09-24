@@ -30,7 +30,7 @@ CONOCENOS
   gap: 30px;
   padding: 28px;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .scale {
@@ -39,4 +39,14 @@ CONOCENOS
 
 .scale:hover {
   transform: scale(1.1);
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px hacia abajo)
+=============================================*/
+
+@media (max-width: 768px) {
+  .fondoConocenos {
+    height: 700px;
+  }
 }
